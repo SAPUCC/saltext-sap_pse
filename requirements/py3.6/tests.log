@@ -1,0 +1,172 @@
+>>>>>>> LOGS >>>>>>>>>
+15:38:39,535 [pip-tools-compile:310 ][INFO    ] Compiling requirements to requirements/py3.6/tests.txt
+15:38:39,535 [pip-tools-compile:364 ][DEBUG   ] Switching sys.argv to: ['pip-compile', '-o', 'requirements/py3.6/tests.txt', '-v', 'requirements/tests.in']
+15:38:39,539 [pip._internal.configuration:294 ][DEBUG   ] For variant 'global', will try loading '/etc/xdg/pip/pip.conf'
+15:38:39,539 [pip._internal.configuration:294 ][DEBUG   ] For variant 'global', will try loading '/etc/pip.conf'
+15:38:39,540 [pip._internal.configuration:294 ][DEBUG   ] For variant 'user', will try loading '/home/bwegener/.pip/pip.conf'
+15:38:39,540 [pip._internal.configuration:294 ][DEBUG   ] For variant 'user', will try loading '/home/bwegener/.config/pip/pip.conf'
+15:38:39,540 [pip._internal.configuration:294 ][DEBUG   ] For variant 'site', will try loading '/home/bwegener/.cache/pre-commit/repoknanxfrd/py_env-python3/pip.conf'
+ariant 'site', will try loading '/home/bwegener/.cache/pre-commit/repoknanxfrd/py_env-python3/pip.conf'
+<<<<<<< LOGS <<<<<<<<<
+
+>>>>>>> STDOUT >>>>>>>
+Running: pip-compile -o requirements/py3.6/tests.txt -v requirements/tests.in
+  Impersonating: linux
+  Mocked Python Version: 3.6
+Failed to compile requirements. Exit code: 1
+<<<<<<< STDOUT <<<<<<<
+
+>>>>>>> STDERR >>>>>>>
+Using indexes:
+  https://pypi.org/simple
+
+                          ROUND 1
+Current constraints:
+  pytest>=6.1.0 (from -r requirements/tests.in (line 1))
+  pytest-salt-factories>=0.121.1 (from -r requirements/tests.in (line 2))
+
+Finding the best candidates:
+  found candidate pytest==7.0.1 (constraint was >=6.1.0)
+  found candidate pytest-salt-factories==0.912.2 (constraint was >=0.121.1)
+
+Finding secondary dependencies:
+  pytest==7.0.1             requires attrs>=19.2.0, importlib-metadata>=0.12; python_version < "3.8", iniconfig, packaging, pluggy<2.0,>=0.12, py>=1.8.2, tomli>=1.0.0
+  pytest-salt-factories==0.912.2 requires attrs>=19.2.0, msgpack, psutil, pytest-helpers-namespace>=2021.4.29, pytest-skip-markers>=1.1.2, pytest-tempdir>=2019.9.16, pytest>=6.0.0, pyzmq, virtualenv
+
+New dependencies found in this round:
+  adding ('attrs', '>=19.2.0', [])
+  adding ('importlib-metadata', '>=0.12', [])
+  adding ('iniconfig', '', [])
+  adding ('msgpack', '', [])
+  adding ('packaging', '', [])
+  adding ('pluggy', '<2.0,>=0.12', [])
+  adding ('psutil', '', [])
+  adding ('py', '>=1.8.2', [])
+  adding ('pytest', '>=6.0.0', [])
+  adding ('pytest-helpers-namespace', '>=2021.4.29', [])
+  adding ('pytest-skip-markers', '>=1.1.2', [])
+  adding ('pytest-tempdir', '>=2019.9.16', [])
+  adding ('pyzmq', '', [])
+  adding ('tomli', '>=1.0.0', [])
+  adding ('virtualenv', '', [])
+Removed dependencies in this round:
+------------------------------------------------------------
+Result of round 1: not stable
+
+                          ROUND 2
+Current constraints:
+  attrs>=19.2.0 (from pytest==7.0.1->-r requirements/tests.in (line 1))
+  importlib-metadata>=0.12 (from pytest==7.0.1->-r requirements/tests.in (line 1))
+  iniconfig (from pytest==7.0.1->-r requirements/tests.in (line 1))
+  msgpack (from pytest-salt-factories==0.912.2->-r requirements/tests.in (line 2))
+  packaging (from pytest==7.0.1->-r requirements/tests.in (line 1))
+  pluggy<2.0,>=0.12 (from pytest==7.0.1->-r requirements/tests.in (line 1))
+  psutil (from pytest-salt-factories==0.912.2->-r requirements/tests.in (line 2))
+  py>=1.8.2 (from pytest==7.0.1->-r requirements/tests.in (line 1))
+  pytest>=6.0.0,>=6.1.0 (from -r requirements/tests.in (line 1))
+  pytest-helpers-namespace>=2021.4.29 (from pytest-salt-factories==0.912.2->-r requirements/tests.in (line 2))
+  pytest-salt-factories>=0.121.1 (from -r requirements/tests.in (line 2))
+  pytest-skip-markers>=1.1.2 (from pytest-salt-factories==0.912.2->-r requirements/tests.in (line 2))
+  pytest-tempdir>=2019.9.16 (from pytest-salt-factories==0.912.2->-r requirements/tests.in (line 2))
+  pyzmq (from pytest-salt-factories==0.912.2->-r requirements/tests.in (line 2))
+  tomli>=1.0.0 (from pytest==7.0.1->-r requirements/tests.in (line 1))
+  virtualenv (from pytest-salt-factories==0.912.2->-r requirements/tests.in (line 2))
+
+Finding the best candidates:
+  found candidate attrs==22.1.0 (constraint was >=19.2.0)
+  found candidate importlib-metadata==4.8.3 (constraint was >=0.12)
+  found candidate iniconfig==1.1.1 (constraint was <any>)
+  found candidate msgpack==1.0.4 (constraint was <any>)
+  found candidate packaging==21.3 (constraint was <any>)
+  found candidate pluggy==1.0.0 (constraint was >=0.12,<2.0)
+  found candidate psutil==5.9.4 (constraint was <any>)
+  found candidate py==1.11.0 (constraint was >=1.8.2)
+  found candidate pytest==7.0.1 (constraint was >=6.0.0,>=6.1.0)
+  found candidate pytest-helpers-namespace==2021.12.29 (constraint was >=2021.4.29)
+  found candidate pytest-salt-factories==0.912.2 (constraint was >=0.121.1)
+  found candidate pytest-skip-markers==1.3.0 (constraint was >=1.1.2)
+  found candidate pytest-tempdir==2019.10.12 (constraint was >=2019.9.16)
+  found candidate pyzmq==24.0.1 (constraint was <any>)
+  found candidate tomli==1.2.3 (constraint was >=1.0.0)
+  found candidate virtualenv==20.16.7 (constraint was <any>)
+
+Finding secondary dependencies:
+  pyzmq==24.0.1 not in cache, need to check index
+--- Logging error ---
+Traceback (most recent call last):
+  File "/home/bwegener/.cache/pre-commit/repoknanxfrd/py_env-python3/lib/python3.6/site-packages/pip/_internal/cli/spinners.py", line 145, in open_spinner
+    yield spinner
+  File "/home/bwegener/.cache/pre-commit/repoknanxfrd/py_env-python3/lib/python3.6/site-packages/pip/_internal/utils/subprocess.py", line 277, in runner
+    spinner=spinner,
+  File "/home/bwegener/.cache/pre-commit/repoknanxfrd/py_env-python3/lib/python3.6/site-packages/pip/_internal/utils/subprocess.py", line 200, in call_subprocess
+    line = console_to_str(proc.stdout.readline())
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib64/python3.6/logging/__init__.py", line 997, in emit
+    stream.write(self.terminator)
+OSError: [Errno 5] Input/output error
+Call stack:
+  File "/home/bwegener/.cache/pre-commit/repoknanxfrd/py_env-python3/bin/pip-tools-compile", line 8, in <module>
+    sys.exit(main())
+  File "/home/bwegener/.cache/pre-commit/repoknanxfrd/py_env-python3/lib/python3.6/site-packages/pip_tools_compile/__main__.py", line 536, in main
+    if not compile_requirement_file(fpath, outfile_path, options, unknown_args):
+  File "/home/bwegener/.cache/pre-commit/repoknanxfrd/py_env-python3/lib/python3.6/site-packages/pip_tools_compile/__main__.py", line 368, in compile_requirement_file
+    piptools.scripts.compile.cli()
+  File "/home/bwegener/.cache/pre-commit/repoknanxfrd/py_env-python3/lib/python3.6/site-packages/click/core.py", line 1128, in __call__
+    return self.main(*args, **kwargs)
+  File "/home/bwegener/.cache/pre-commit/repoknanxfrd/py_env-python3/lib/python3.6/site-packages/click/core.py", line 1053, in main
+    rv = self.invoke(ctx)
+  File "/home/bwegener/.cache/pre-commit/repoknanxfrd/py_env-python3/lib/python3.6/site-packages/click/core.py", line 1395, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/home/bwegener/.cache/pre-commit/repoknanxfrd/py_env-python3/lib/python3.6/site-packages/click/core.py", line 754, in invoke
+    return __callback(*args, **kwargs)
+  File "/home/bwegener/.cache/pre-commit/repoknanxfrd/py_env-python3/lib/python3.6/site-packages/click/decorators.py", line 26, in new_func
+    return f(get_current_context(), *args, **kwargs)
+  File "/home/bwegener/.cache/pre-commit/repoknanxfrd/py_env-python3/lib/python3.6/site-packages/piptools/scripts/compile.py", line 452, in cli
+    results = resolver.resolve(max_rounds=max_rounds)
+  File "/home/bwegener/.cache/pre-commit/repoknanxfrd/py_env-python3/lib/python3.6/site-packages/piptools/resolver.py", line 178, in resolve
+    has_changed, best_matches = self._resolve_one_round()
+  File "/home/bwegener/.cache/pre-commit/repoknanxfrd/py_env-python3/lib/python3.6/site-packages/piptools/resolver.py", line 275, in _resolve_one_round
+    their_constraints.extend(self._iter_dependencies(best_match))
+  File "/home/bwegener/.cache/pre-commit/repoknanxfrd/py_env-python3/lib/python3.6/site-packages/piptools/resolver.py", line 385, in _iter_dependencies
+    dependencies = self.repository.get_dependencies(ireq)
+  File "/home/bwegener/.cache/pre-commit/repoknanxfrd/py_env-python3/lib/python3.6/site-packages/piptools/repositories/local.py", line 76, in get_dependencies
+    return self.repository.get_dependencies(ireq)
+  File "/home/bwegener/.cache/pre-commit/repoknanxfrd/py_env-python3/lib/python3.6/site-packages/piptools/repositories/pypi.py", line 248, in get_dependencies
+    download_dir, ireq, wheel_cache
+  File "/home/bwegener/.cache/pre-commit/repoknanxfrd/py_env-python3/lib/python3.6/site-packages/piptools/repositories/pypi.py", line 203, in resolve_reqs
+    results = resolver._resolve_one(reqset, ireq)
+  File "/home/bwegener/.cache/pre-commit/repoknanxfrd/py_env-python3/lib/python3.6/site-packages/pip/_internal/resolution/legacy/resolver.py", line 388, in _resolve_one
+    abstract_dist = self._get_abstract_dist_for(req_to_install)
+  File "/home/bwegener/.cache/pre-commit/repoknanxfrd/py_env-python3/lib/python3.6/site-packages/pip/_internal/resolution/legacy/resolver.py", line 340, in _get_abstract_dist_for
+    abstract_dist = self.preparer.prepare_linked_requirement(req)
+  File "/home/bwegener/.cache/pre-commit/repoknanxfrd/py_env-python3/lib/python3.6/site-packages/pip/_internal/operations/prepare.py", line 483, in prepare_linked_requirement
+    req, self.req_tracker, self.finder, self.build_isolation,
+  File "/home/bwegener/.cache/pre-commit/repoknanxfrd/py_env-python3/lib/python3.6/site-packages/pip/_internal/operations/prepare.py", line 91, in _get_prepared_distribution
+    abstract_dist.prepare_distribution_metadata(finder, build_isolation)
+  File "/home/bwegener/.cache/pre-commit/repoknanxfrd/py_env-python3/lib/python3.6/site-packages/pip/_internal/distributions/sdist.py", line 38, in prepare_distribution_metadata
+    self._setup_isolation(finder)
+  File "/home/bwegener/.cache/pre-commit/repoknanxfrd/py_env-python3/lib/python3.6/site-packages/pip/_internal/distributions/sdist.py", line 96, in _setup_isolation
+    reqs = backend.get_requires_for_build_wheel()
+  File "/home/bwegener/.cache/pre-commit/repoknanxfrd/py_env-python3/lib/python3.6/site-packages/pip/_vendor/pep517/wrappers.py", line 161, in get_requires_for_build_wheel
+    'config_settings': config_settings
+  File "/home/bwegener/.cache/pre-commit/repoknanxfrd/py_env-python3/lib/python3.6/site-packages/pip/_vendor/pep517/wrappers.py", line 258, in _call_hook
+    extra_environ=extra_environ
+  File "/home/bwegener/.cache/pre-commit/repoknanxfrd/py_env-python3/lib/python3.6/site-packages/pip/_internal/utils/subprocess.py", line 277, in runner
+    spinner=spinner,
+  File "/usr/lib64/python3.6/contextlib.py", line 99, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/home/bwegener/.cache/pre-commit/repoknanxfrd/py_env-python3/lib/python3.6/site-packages/pip/_internal/cli/spinners.py", line 147, in open_spinner
+    spinner.finish("canceled")
+  File "/home/bwegener/.cache/pre-commit/repoknanxfrd/py_env-python3/lib/python3.6/site-packages/pip/_internal/cli/spinners.py", line 110, in finish
+    "finished with status '{final_status}'".format(**locals()))
+  File "/home/bwegener/.cache/pre-commit/repoknanxfrd/py_env-python3/lib/python3.6/site-packages/pip/_internal/cli/spinners.py", line 95, in _update
+    logger.info("%s: %s", self._message, status)
+Message: '%s: %s'
+Arguments: ('Getting requirements to build wheel', "finished with status 'canceled'")
+
+Aborted!
+<<<<<<< STDERR <<<<<<<
