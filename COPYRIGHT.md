@@ -1,4 +1,4 @@
-SaltStack extension for the SAP Host Agent
+SaltStack extension for SAP Personal Security Environments
 Copyright (C) 2022 SAP UCC Magdeburg
 
 This program is free software: you can redistribute it and/or modify
